@@ -2,6 +2,7 @@
 var lat = '';
 var lng = '';
 var address = '';
+var page_obj;
 
 //geocoder that makes use of lattitude and longitutde from navigator.geolocaiton
 var geocoder = new google.maps.Geocoder();
@@ -46,10 +47,11 @@ function zipToLocation() {
 
 }
 
-
-function loadMore() {
-
+//for use of the pagnation
+function loadMore(page_obj) {
+    console.log(page_obj);
 }
+//takes care searching for the
 function outputResults(lat, lng) {
 // what is 500
 //what should type be
@@ -63,7 +65,7 @@ function outputResults(lat, lng) {
     var service = new google.maps.places.PlacesService(container);
     service.nearbySearch(request, callback);
 
-    function callback(results, status) {
+    function callback(results, status, pagination) {
 
         if (status == google.maps.places.PlacesServiceStatus.OK) {
 
@@ -143,6 +145,9 @@ function outputResults(lat, lng) {
             html += '</div>'
             html += '<div class="row"><div class="text-center col-md-12 col-lg-12 col-sm-12"><button type="button" class="btn btn-primary load-button" onclick="loadMore()">Load More</button></div></div>';
             document.getElementById("results").innerHTML = html;
+
+            //TODO: add support for getting next rows.
+            //TODO: add support for filtering. 
         }
     }
 }

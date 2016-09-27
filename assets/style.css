@@ -1,0 +1,26 @@
+div.text-center {
+    text-align: center;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+#location {
+    font-size: 12px;
+    margin-bottom:10px;
+}
+
+h4, h1, h2 {
+    margin-bottom: 20px;
+}
+
+.load-button {
+
+    text-align: center;
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .load-button {width:90%; display:block;}
+
+}

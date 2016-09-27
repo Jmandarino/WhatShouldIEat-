@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="title" content="What Should I eat today?">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- boostrap and javascript dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+          integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+            integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+            integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+            integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+            crossorigin="anonymous"></script>
+
+    <!-- link to custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- api key --->
+    <!-- AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM -->
+    <h1>Where should I eat?</h1>
+    <p class="lead">about this app. Post-ironic umami tbh, hammock skateboard chicharrones letterpress. Sartorial
+        messenger bag taxidermy biodiesel, hammock listicle selfies post-ironic. Activated charcoal skateboard messenger
+        bag listicle, kale chips raclette viral yr banjo affogato small batch kombucha ramps fixie paleo. Tacos cray
+        asymmetrical bespoke, unicorn salvia paleo. Austin small batch pork belly microdosing, wayfarers chartreuse
+        celiac. Cardigan artisan pug subway tile meggings hella, cray crucifix XOXO affogato. XOXO knausgaard cray,
+        migas cliche glossier hammock literally vice pok pok freegan pug before they sold out prism.</p>
+
+    <div id="warn"><h4>Location Services are on!</h4></div>
+    <div id="location"></div>
+
+
+<div id="findloc">
+        <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
+        <button onclick="zipToLocation()">Submit</button>
+
+
+
+    </div>
+
+    <div id="winner"></div>
+    <div id="results"></div>
+
+
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&libraries=places">
+    </script>
+
+
+    <script type="text/javascript" src="assets/script.js"></script>
+
+</div>
+</body>
+
+</html>

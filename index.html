@@ -26,7 +26,14 @@
             crossorigin="anonymous"></script>
 
     <!-- link to custom css -->
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/bootstrap-slider.min.css">
+    <script src="assets/js/bootstrap-slider.min.js"></script>
+
+
+    <!-- multi select -->
+    <script src="assets/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style/bootstrap-multiselect.css">
 </head>
 <body>
 <div class="container">
@@ -44,25 +51,40 @@
     <div id="warn"><h4>Location Services are on!</h4></div>
     <div id="location"></div>
 
+    <div class="row">
+        <div id="findloc" class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <br>
+            <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
+            <button onclick="zipToLocation()">Submit</button>
+            <button onclick="addSearchOptions()">options</button>
 
-<div id="findloc">
-        <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
-        <button onclick="zipToLocation()">Submit</button>
 
+        </div>
+        <div id="searchOptions" class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
 
-
+            <span class="label">Select Price range:</span>
+            <select id="price-filter" multiple="multiple">
+                <option value="1">$</option>
+                <option value="2">$$</option>
+                <option value="3">$$$</option>
+                <option value="4">$$$$</option>
+            </select>
+            </div>
+        </div>
     </div>
 
     <div id="winner"></div>
     <div id="results"></div>
+    <div id="results2"></div>
 
 
+
+    <!-- load gmaps and custom js after the page -->
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&libraries=places">
     </script>
 
-
-    <script type="text/javascript" src="assets/script.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 
 </div>
 </body>

@@ -8,6 +8,19 @@ var page_obj;
 var geocoder = new google.maps.Geocoder();
 window.onload = getLocation;
 
+//price filter
+$(document).ready(function() {
+    $('#price-filter').multiselect();
+});
+
+
+//div "serachOptions"
+function addSearchOptions(){
+    document.getElementById("searchOptions").style.visibility = "visible";
+}
+
+
+
 
 //automatically gets location
 function getLocation() {
@@ -51,17 +64,34 @@ function zipToLocation() {
 function loadMore(page_obj) {
     console.log(page_obj);
 }
+
+//holds old html information
+var data;
+//flag set to show if data is being appended or not
+var append = false;
+
 //takes care searching for the
 function outputResults(lat, lng) {
 // what is 500
 //what should type be
     var request = {
         location: new google.maps.LatLng(lat, lng),
-        radius: '750',
+        radius: '750', // in meters
         type: 'restaurant' // can only search for one type
+
     };
+
+    /* DATA RESET */
     var container = document.getElementById('results');
 
+    // if we reset the search we aren't appending anymore.
+    var append = false;
+    // clean out old results if there are any.
+    container.innerHTML  = "";
+    //reset data, there is no old html code that should be stored.
+    data = "";
+
+    /* USE OF GOOGLE PLACES API */
     var service = new google.maps.places.PlacesService(container);
     service.nearbySearch(request, callback);
 
@@ -74,28 +104,31 @@ function outputResults(lat, lng) {
 
             console.log(results.length);
 
+            //if we are appending we arne't selecting a new winner.
+            if (!append) {
+                var winner = '';
+                winner += '<h2>Winner!!</h2>';
 
-            var winner = ''
-            winner += '<h2>Winner!!</h2>';
+                winner += '<p>';
 
-            winner += '<p>';
+                if ("photos" in item) {
+                    winner += '<img class="img-fluid" src="' + item.photos[0].getUrl({
+                            'maxWidth': 100,
+                            'maxHeight': 100
+                        }) + '">'
+                } else {
+                    winner += '<img class="img-fluid" src="assets/images/no_image.gif">';
+                }
 
-            if ("photos" in item) {
-                winner += '<img class="img-fluid" src="' + item.photos[0].getUrl({
-                        'maxWidth': 100,
-                        'maxHeight': 100
-                    }) + '">'
-            } else {
-                winner += '<img class="img-fluid" src="assets/images/no_image.gif">';
+                winner += item.name + '<br />';
+                winner += item.vicinity + '<br />';
+                winner += item.rating + '<br />';
+                winner += '</p><hr>';
+
+                //reset the winner's html
+                document.getElementById('winner').innerHTML = winner;
+
             }
-
-            winner += item.name + '<br />';
-            winner += item.vicinity + '<br />';
-            winner += item.rating + '<br />';
-            winner += '</p><hr>';
-
-            //reset the winner's html
-            document.getElementById('winner').innerHTML = winner;
             var html = '';
             for (var i = 0; i < results.length; i++) {
 
@@ -142,12 +175,59 @@ function outputResults(lat, lng) {
                     html += '</div>'
                 }
             }
-            html += '</div>'
-            html += '<div class="row"><div class="text-center col-md-12 col-lg-12 col-sm-12"><button type="button" class="btn btn-primary load-button" onclick="loadMore()">Load More</button></div></div>';
-            document.getElementById("results").innerHTML = html;
+            html += '</div>';
+
+            if (pagination.hasNextPage) {
+                html += '<div class="row"><div class="text-center col-md-12 col-lg-12 col-sm-12"><button id="load-button" type="button" class="btn btn-primary load-button" onclick="loadMore()">Load More</button></div></div>';
+            }
+            if (append) {
+                var div = document.getElementById("results");
+
+                div.innerHTML = data;
+
+                //remove old button
+                document.getElementById("load-button").remove();
+                //reset the old data to include the removed load more button
+                data = div.innerHTML;
+
+                //add new html to old html
+                div.insertAdjacentHTML('afterend', html);
+
+                //the saved old html, append new html to be saved for later.
+                data += html;
+            } else {
+                document.getElementById("results").innerHTML = html;
+                append = true;
+                data = html;
+            }
+
 
             //TODO: add support for getting next rows.
-            //TODO: add support for filtering. 
+            //TODO: add support for filtering.
+            //if there are more pages
+            if (pagination.hasNextPage) {
+                //we are appending
+                append = true;
+
+                //creating a button adding an event listener
+                var button = document.getElementById("load-button");
+                button.disabled = false;
+
+                button.addEventListener('click', function () {
+
+                    //on click we will go to the next page of the API results
+                    //this calls the callback function again.
+                    button.disabled = true;
+                    append = true;
+                    pagination.nextPage();
+
+                });
+
+
+            } else {
+                //hide the home button
+                document.getElementById("load-button").style.visibility = "hidden";
+            }
         }
     }
 }

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/assets/script.js" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="8248c661-b725-42c4-b5f8-03763757b779" name="Default" comment="" />
     <ignored path="wsie.iws" />
@@ -29,30 +26,72 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/style.css">
+        <entry file="file://$PROJECT_DIR$/assets/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/script.js">
+        <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="149" column="47" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+            <state relative-caret-position="204">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceService.FindPlaces" pinned="false" current-in-tab="false">
+        <entry file="https://maps.googleapis.com/maps/api/place/js/PlaceService.FindPlaces?1m6&amp;1m2&amp;1d40.7025916353691&amp;2d-74.02200761377549&amp;2m2&amp;1d40.71606636463089&amp;2d-74.00423158622448&amp;2sen-US&amp;6srestaurant&amp;29e3&amp;1032e0&amp;key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;callback=_xdc_._8ssnnn&amp;token=115199">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tether.min.js" pinned="false" current-in-tab="false">
+        <entry file="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
+        <entry file="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js" pinned="false" current-in-tab="false">
+        <entry file="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;libraries=places">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceService.FindPlaces" pinned="false" current-in-tab="false">
+        <entry file="https://maps.googleapis.com/maps/api/place/js/PlaceService.FindPlaces?2sen-US&amp;9sCoQC_AAAAOuktSDwasjrQ8tO7wUve-fu2OYR7nte3DljYyGvUYgiLofs9vEilP-V7jyno8nb96PpeKr-wZgW7RBLy1QBzyp8qqmzcGRHeWG6RakTnWqp68ZDw6IzpaNe3MHnWspC4sO2oA2KyIDKV0ssDgrOHNgPZptBBE0G7VkMwCQ3YEf66MomQ7jjbUsx0lJzxSKZG-37k96HTD5E2VlWll3VQJWOe9OgWBXKZk8lIuak7zgZqjXbI4e0ZGzIwEVdnmIhSataD0w_nuaGI7hDSk-DKINgribS7xcSNWKmCRy4zLx2brHuswNDeRb40PeTpL28ZtPAgsb0CkPj6W6VXQmGdWESEHREa0ByOmwwTQoDzAzOrMQaFIWka33bvTgXyaA7PM2RptIT6YUi&amp;29e3&amp;1032e0&amp;key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;callback=_xdc_._ghdkl9&amp;token=32350">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.js" pinned="false" current-in-tab="false">
+        <entry file="https://maps.googleapis.com/maps-api-v3/api/js/26/6/stats.js">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -80,9 +119,13 @@
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/6/util.js" />
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/6/stats.js" />
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/6/places_impl.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" />
+        <option value="cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" />
         <option value="$PROJECT_DIR$/assets/style.css" />
         <option value="$PROJECT_DIR$/assets/script.js" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/assets/style/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -140,6 +183,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wsie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wsie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wsie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wsie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wsie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,12 +323,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474909725321</updated>
-      <workItem from="1474909726995" duration="28438000" />
+      <workItem from="1474909726995" duration="39669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28438000" />
+    <option name="totallyTimeSpent" value="39669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1688" height="1014" extended-state="6" />
@@ -304,15 +383,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assets/script.js</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -327,16 +398,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="https://maps.googleapis.com/maps-api-v3/api/js/26/6/stats.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;libraries=places">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="https://maps.googleapis.com/maps-api-v3/api/js/26/6/util.js">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
@@ -347,26 +408,72 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
+    <entry file="https://maps.googleapis.com/maps/api/place/js/PlaceService.FindPlaces?2sen-US&amp;9sCoQC_AAAAOuktSDwasjrQ8tO7wUve-fu2OYR7nte3DljYyGvUYgiLofs9vEilP-V7jyno8nb96PpeKr-wZgW7RBLy1QBzyp8qqmzcGRHeWG6RakTnWqp68ZDw6IzpaNe3MHnWspC4sO2oA2KyIDKV0ssDgrOHNgPZptBBE0G7VkMwCQ3YEf66MomQ7jjbUsx0lJzxSKZG-37k96HTD5E2VlWll3VQJWOe9OgWBXKZk8lIuak7zgZqjXbI4e0ZGzIwEVdnmIhSataD0w_nuaGI7hDSk-DKINgribS7xcSNWKmCRy4zLx2brHuswNDeRb40PeTpL28ZtPAgsb0CkPj6W6VXQmGdWESEHREa0ByOmwwTQoDzAzOrMQaFIWka33bvTgXyaA7PM2RptIT6YUi&amp;29e3&amp;1032e0&amp;key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;callback=_xdc_._ghdkl9&amp;token=32350">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="https://maps.googleapis.com/maps-api-v3/api/js/26/6/stats.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="https://maps.googleapis.com/maps/api/place/js/PlaceService.FindPlaces?1m6&amp;1m2&amp;1d40.7025916353691&amp;2d-74.02200761377549&amp;2m2&amp;1d40.71606636463089&amp;2d-74.00423158622448&amp;2sen-US&amp;6srestaurant&amp;29e3&amp;1032e0&amp;key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;callback=_xdc_._8ssnnn&amp;token=115199">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;libraries=places">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="149" column="47" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+        <state relative-caret-position="142">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
         </state>
       </provider>

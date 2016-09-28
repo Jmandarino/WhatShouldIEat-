@@ -1,5 +1,11 @@
+.label, #price-filter{
+    display: block;
+}
 div.text-center {
     text-align: center;
+}
+#searchOptions {
+    visibility: hidden;
 }
 
 .item {
@@ -10,7 +16,7 @@ div.text-center {
     margin-bottom:10px;
 }
 
-h4, h1, h2 {
+h4, h1, h2, div {
     margin-bottom: 20px;
 }
 

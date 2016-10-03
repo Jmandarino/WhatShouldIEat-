@@ -61,30 +61,38 @@
 
         </div>
         <div id="searchOptions" class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <span class="label">Select Price range:</span>
+                <select id="price-filter" multiple="multiple">
+                    <option value="1">$</option>
+                    <option value="2">$$</option>
+                    <option value="3">$$$</option>
+                    <option value="4">$$$$</option>
+                </select>
+            </div>
 
-            <span class="label">Select Price range:</span>
-            <select id="price-filter" multiple="multiple">
-                <option value="1">$</option>
-                <option value="2">$$</option>
-                <option value="3">$$$</option>
-                <option value="4">$$$$</option>
-            </select>
+
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <span class="label">Write in a keyword</span>
+                <input id="keywordsearchfield" type="text" placeholder="Keyword">
             </div>
         </div>
+
     </div>
 
-    <div id="winner"></div>
-    <div id="results"></div>
-    <div id="results2"></div>
 
+<div id="winner"></div>
+<div id="results"></div>
+<div id="results2"></div>
 
+</div> <!-- end of container -->
 
-    <!-- load gmaps and custom js after the page -->
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&libraries=places">
-    </script>
+<!-- load gmaps and custom js after the page -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&libraries=places">
+</script>
 
-    <script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
 
 </div>
 </body>

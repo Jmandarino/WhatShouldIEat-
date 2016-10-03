@@ -9,17 +9,15 @@ var geocoder = new google.maps.Geocoder();
 window.onload = getLocation;
 
 //price filter
-$(document).ready(function() {
+$(document).ready(function () {
     $('#price-filter').multiselect();
 });
 
 
 //div "serachOptions"
-function addSearchOptions(){
+function addSearchOptions() {
     document.getElementById("searchOptions").style.visibility = "visible";
 }
-
-
 
 
 //automatically gets location
@@ -60,9 +58,64 @@ function zipToLocation() {
 
 }
 
-//for use of the pagnation
-function loadMore(page_obj) {
-    console.log(page_obj);
+//used to create requests
+function create_request(location, radius, type) {
+    //holds selected values
+    var selectedValues = [];
+    //min and max prices for searching
+    var minprice;
+    var maxprice;
+
+    //this is the base request
+    request = {
+        location: location,
+        radius: radius,
+        type: type
+    };
+
+    //selected values from price dropdown
+    $("#price-filter :selected").each(function () {
+        selectedValues.push($(this).val());
+    });
+
+
+    if (selectedValues.length == 1) {
+        minprice = selectedValues[0];
+        maxprice = selectedValues[0];
+
+        request['minprice'] = minprice;
+        request['maxprice'] = maxprice;
+
+
+    } else if (selectedValues.length > 1) {
+        minprice = selectedValues[0];
+        maxprice = selectedValues[selectedValues.length - 1];
+
+        request['minprice'] = minprice;
+        request['maxprice'] = maxprice;
+    }
+
+    //case insensitive of the first letters
+    var re = /^[a-z]+$/i;
+    var keyword = document.getElementById("keywordsearchfield");
+
+    if (keyword != null && keyword.value != '') {
+
+        //strip white space
+        keyword = $.trim(keyword.value);
+
+        // keyword = (keyword).match(re)[0];
+
+        if (re.test(keyword)) {
+
+            request["keyword"] = keyword.match(re);
+        }
+
+
+    }
+
+
+    return request;
 }
 
 //holds old html information
@@ -74,12 +127,14 @@ var append = false;
 function outputResults(lat, lng) {
 // what is 500
 //what should type be
-    var request = {
-        location: new google.maps.LatLng(lat, lng),
-        radius: '750', // in meters
-        type: 'restaurant' // can only search for one type
+//     var request = {
+//         location: new google.maps.LatLng(lat, lng),
+//         radius: '750', // in meters
+//         type: 'restaurant' // can only search for one type
+//
+//     };
 
-    };
+    request = create_request(new google.maps.LatLng(lat, lng), '750', 'restaurant');
 
     /* DATA RESET */
     var container = document.getElementById('results');
@@ -87,7 +142,7 @@ function outputResults(lat, lng) {
     // if we reset the search we aren't appending anymore.
     var append = false;
     // clean out old results if there are any.
-    container.innerHTML  = "";
+    container.innerHTML = "";
     //reset data, there is no old html code that should be stored.
     data = "";
 
@@ -226,7 +281,11 @@ function outputResults(lat, lng) {
 
             } else {
                 //hide the home button
-                document.getElementById("load-button").style.visibility = "hidden";
+                try {
+                    document.getElementById("load-button").style.visibility = "hidden";
+                } catch (e) {
+                    console.log("no load button");
+                }
             }
         }
     }

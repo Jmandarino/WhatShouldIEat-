@@ -11,6 +11,7 @@ window.onload = getLocation;
 //price filter
 $(document).ready(function () {
     $('#price-filter').multiselect();
+    $('[data-toggle="popover"]').popover();
 });
 
 
@@ -257,8 +258,6 @@ function outputResults(lat, lng) {
             }
 
 
-            //TODO: add support for getting next rows.
-            //TODO: add support for filtering.
             //if there are more pages
             if (pagination.hasNextPage) {
                 //we are appending

@@ -9,8 +9,15 @@
     <meta name="title" content="What Should I eat today?">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- facebook stuff -->
+    <!-- TODO: fill this out -->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="What Should I eat?"/>
+    <meta property="og:description" content="A website that helps you choose what local restaurant you should eat at."/>
+    <meta property="og:image" content=""/>
 
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="assets/images/icon.png">
 
     <!-- boostrap and javascript dependencies -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
@@ -40,28 +47,30 @@
 
     <!-- api key --->
     <!-- AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM -->
-    <h1>Where should I eat?</h1>
-    <p class="lead">about this app. Post-ironic umami tbh, hammock skateboard chicharrones letterpress. Sartorial
-        messenger bag taxidermy biodiesel, hammock listicle selfies post-ironic. Activated charcoal skateboard messenger
-        bag listicle, kale chips raclette viral yr banjo affogato small batch kombucha ramps fixie paleo. Tacos cray
-        asymmetrical bespoke, unicorn salvia paleo. Austin small batch pork belly microdosing, wayfarers chartreuse
-        celiac. Cardigan artisan pug subway tile meggings hella, cray crucifix XOXO affogato. XOXO knausgaard cray,
-        migas cliche glossier hammock literally vice pok pok freegan pug before they sold out prism.</p>
+    <h1>Where should I eat? <span style="font-size: 18px;">beta v 1.0</span></h1>
+    <p class="lead">Find local places to eat by either turning on your Location Services or by entering your ZIP
+        code. </p>
+    <p></p>
 
     <div id="warn"><h4>Location Services are on!</h4></div>
     <div id="location"></div>
 
     <div class="row">
-        <div id="findloc" class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+        <div id="findloc" class="col-md-6 col-lg-12 col-sm-12 col-xs-12">
             <br>
             <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
             <button onclick="zipToLocation()">Submit</button>
-            <button onclick="addSearchOptions()">options</button>
+            <button data-container="body" data-toggle="popover" data-placement="bottom"
+                    data-content="Click to expand and view search options" data-trigger="hover"
+                    onclick="addSearchOptions()">options
+            </button>
 
 
         </div>
-        <div id="searchOptions" class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+    </div>
+    <div class="row">
+        <div id="searchOptions" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6">
                 <span class="label">Select Price range:</span>
                 <select id="price-filter" multiple="multiple">
                     <option value="1">$</option>
@@ -72,18 +81,27 @@
             </div>
 
 
-            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
-                <span class="label">Write in a keyword</span>
-                <input id="keywordsearchfield" type="text" placeholder="Keyword">
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6">
+                <span class="label">Enter a keyword</span>
+                <input id="keywordsearchfield" type="text" placeholder="Keyword" data-container="body"
+                       data-toggle="popover"
+                       data-placement="bottom" data-content="Enter only one keyword" data-trigger="click">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center">
+                <br>
+                <button data-container="body" data-toggle="popover" data-placement="bottom"
+                        data-content="Click to filter search options" data-trigger="hover" onclick="filtersearch()">
+                    Apply
+                </button>
+
             </div>
         </div>
-
     </div>
 
 
-<div id="winner"></div>
-<div id="results"></div>
-<div id="results2"></div>
+    <div id="winner"></div>
+    <div id="results"></div>
+    <div id="results2"></div>
 
 </div> <!-- end of container -->
 

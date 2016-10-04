@@ -4,7 +4,6 @@
     <list default="true" id="8248c661-b725-42c4-b5f8-03763757b779" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="wsie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="92" column="112" selection-start-line="92" selection-start-column="100" selection-end-line="92" selection-end-column="112" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -49,13 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2839">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="177">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js" pinned="false" current-in-tab="false">
+        <entry file="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;libraries=places">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -108,8 +114,8 @@
         <option value="$PROJECT_DIR$/assets/style.css" />
         <option value="$PROJECT_DIR$/assets/script.js" />
         <option value="$PROJECT_DIR$/assets/style/style.css" />
-        <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -309,7 +315,7 @@
       <updated>1474909725321</updated>
       <workItem from="1474909726995" duration="39669000" />
       <workItem from="1475450131980" duration="5455000" />
-      <workItem from="1475536903131" duration="3965000" />
+      <workItem from="1475536903131" duration="4774000" />
     </task>
     <task id="LOCAL-00001" summary="added functionality to the price range, and keyword elements">
       <created>1475455534792</created>
@@ -318,11 +324,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475455534792</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finalized layout for buttons">
+      <created>1475540920842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1475540920842</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49089000" />
+    <option name="totallyTimeSpent" value="49898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,11 +400,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added functionality to the price range, and keyword elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality to the price range, and keyword elements" />
+    <MESSAGE value="finalized layout for buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalized layout for buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -540,22 +554,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;libraries=places">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="https://maps.googleapis.com/maps/api/place/js/PlaceService.FindPlaces?2sen-US&amp;9sCoQC_AAAAOuktSDwasjrQ8tO7wUve-fu2OYR7nte3DljYyGvUYgiLofs9vEilP-V7jyno8nb96PpeKr-wZgW7RBLy1QBzyp8qqmzcGRHeWG6RakTnWqp68ZDw6IzpaNe3MHnWspC4sO2oA2KyIDKV0ssDgrOHNgPZptBBE0G7VkMwCQ3YEf66MomQ7jjbUsx0lJzxSKZG-37k96HTD5E2VlWll3VQJWOe9OgWBXKZk8lIuak7zgZqjXbI4e0ZGzIwEVdnmIhSataD0w_nuaGI7hDSk-DKINgribS7xcSNWKmCRy4zLx2brHuswNDeRb40PeTpL28ZtPAgsb0CkPj6W6VXQmGdWESEHREa0ByOmwwTQoDzAzOrMQaFIWka33bvTgXyaA7PM2RptIT6YUi&amp;29e3&amp;1032e0&amp;key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;callback=_xdc_._ghdkl9&amp;token=32350">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2839">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/style/style.css">
@@ -568,11 +569,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="238">
+          <caret line="92" column="112" selection-start-line="92" selection-start-column="100" selection-end-line="92" selection-end-column="112" />
           <folding>
             <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM&amp;libraries=places">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

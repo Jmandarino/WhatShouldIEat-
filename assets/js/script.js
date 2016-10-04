@@ -1,8 +1,7 @@
 //holds lattidute, longitute and address of your location
 var lat = '';
 var lng = '';
-var address = '';
-var page_obj;
+
 
 //geocoder that makes use of lattitude and longitutde from navigator.geolocaiton
 var geocoder = new google.maps.Geocoder();
@@ -37,7 +36,9 @@ function getLocation() {
 function showPosition(position) {
     document.getElementById("location").innerText = position.coords.latitude + " " + position.coords.longitude;
     //searches and outputs all the possible nearby places
-    outputResults(position.coords.latitude, position.coords.longitude)
+    lat = position.coords.latitude;
+    lng = position.coords.longitude;
+    outputResults(position.coords.latitude, position.coords.longitude);
 }
 
 //if the users wants to search by zip code
@@ -59,6 +60,9 @@ function zipToLocation() {
 
 }
 
+function filtersearch(){
+    outputResults(lat,lng);
+}
 //used to create requests
 function create_request(location, radius, type) {
     //holds selected values

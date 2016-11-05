@@ -60,8 +60,19 @@ function zipToLocation() {
 
 }
 
+//when the users hits the apply function
 function filtersearch(){
-    outputResults(lat,lng);
+
+    //get location from
+    getLocation();
+
+    //prioritize zip code box
+    if(document.getElementById("zipcodebox").value != ""){
+        zipToLocation();
+    }
+
+    //output results is a function that searches google places api
+   // outputResults(lat,lng);
 }
 //used to create requests
 function create_request(location, radius, type) {
@@ -142,7 +153,17 @@ function outputResults(lat, lng) {
     request = create_request(new google.maps.LatLng(lat, lng), '750', 'restaurant');
 
     /* DATA RESET */
+
+
+    //remove the load button
+    try{
+        document.getElementById("load-button").remove();
+    } catch (e){
+        console.log(e);
+    }
+
     var container = document.getElementById('results');
+    document.getElementById('results2').innerHTML = "";
 
     // if we reset the search we aren't appending anymore.
     var append = false;
@@ -202,7 +223,7 @@ function outputResults(lat, lng) {
                 html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">';
 
 
-                //some restraunts don't have photos
+                //some restaurant don't have photos
                 if (results[i].hasOwnProperty("photos")) {
                     html += '<img class="img-fluid" src="' + results[i].photos[0].getUrl({
                             'maxWidth': 200,
@@ -238,7 +259,7 @@ function outputResults(lat, lng) {
             html += '</div>';
 
             if (pagination.hasNextPage) {
-                html += '<div class="row"><div class="text-center col-md-12 col-lg-12 col-sm-12"><button id="load-button" type="button" class="btn btn-primary load-button" onclick="loadMore()">Load More</button></div></div>';
+                html += '<div class="row"><div class="text-center col-md-12 col-lg-12 col-sm-12"><button id="load-button" type="button" class="btn btn-primary load-button" >Load More</button></div></div>';
             }
             if (append) {
                 var div = document.getElementById("results");
@@ -266,6 +287,9 @@ function outputResults(lat, lng) {
             if (pagination.hasNextPage) {
                 //we are appending
                 append = true;
+
+                //remove the load button
+
 
                 //creating a button adding an event listener
                 var button = document.getElementById("load-button");

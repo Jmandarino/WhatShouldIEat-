@@ -14,7 +14,8 @@
     <meta property="og:url" content="whatshouldieat.info"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="What Should I eat?"/>
-    <meta property="og:description" content="A website that helps you choose what local restaurant you should eat at."/>
+    <meta property="og:description"
+          content="A website that helps you choose what local restaurant you should eat at. We randomly select a nearby restaurant when you are having troubling choosing 'where should I eat?'"/>
     <meta property="og:image" content=""/>
 
     <link rel="icon" href="assets/images/icon.png">
@@ -43,14 +44,33 @@
     <link rel="stylesheet" type="text/css" href="assets/style/bootstrap-multiselect.css">
 </head>
 <body>
-<div class="container">
+
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">What Should I Eat?</a>
+
+    <!-- Links -->
+    <ul class="nav navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">SEARCH</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#searchOptions">RESULTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info">UPCOMING FEATURES</a>
+        </li>
+    </ul>
+</nav>
+
+<div id="home" class="container">
 
     <!-- api key --->
     <!-- AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM -->
-    <div class="text-center">
-    <h1>Where should I eat? <span style="font-size: 18px;">beta v 1.1</span></h1>
-    <p class="lead">Find local places to eat by either turning on your Location Services or by entering your ZIP
-        code. </p>
+    <div class="header text-center">
+        <h1>Where should I eat? <span style="font-size: 18px;">beta v 1.1</span></h1>
+        <p class="lead">When you can't decide on a place to eat let us choose one for you!</p>
     </div>
     <h3>How to Use This App</h3>
     <ol>
@@ -116,7 +136,31 @@
     <div id="results"></div>
     <div id="results2"></div>
 
+
 </div> <!-- end of container -->
+</div>
+<footer class="footer">
+    <div id="info" class="container">
+        <h4>What's Next:</h4>
+        <p>Here are a list of all upcoming features</p>
+        <p>
+        <ul>
+            <li>Styling Improvements</li>
+            <li>Added search features:
+                <ul>
+                    <li>Search by distance</li>
+                    <li>Sort by best rated, closest</li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+
+        <p class="author">Page Created by: Joey Mandarino <br> <a href="https://jvmservices.com">Jvmservices.com</a></p>
+
+
+
+    </div>
+</footer>
 
 <!-- load gmaps and custom js after the page -->
 <script type="text/javascript"
@@ -124,8 +168,10 @@
 </script>
 
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollto.js"></script>
+<script type="text/javascript" src="assets/js/stickydiv.js"></script>
 
-</div>
+
 </body>
 
 </html>

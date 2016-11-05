@@ -153,15 +153,6 @@ function outputResults(lat, lng) {
     request = create_request(new google.maps.LatLng(lat, lng), '750', 'restaurant');
 
     /* DATA RESET */
-
-
-    //remove the load button
-    try{
-        document.getElementById("load-button").remove();
-    } catch (e){
-        console.log(e);
-    }
-
     var container = document.getElementById('results');
     document.getElementById('results2').innerHTML = "";
 
@@ -179,6 +170,13 @@ function outputResults(lat, lng) {
     function callback(results, status, pagination) {
 
         if (status == google.maps.places.PlacesServiceStatus.OK) {
+
+            //remove the load button
+            try{
+                document.getElementById("load-button").remove();
+            } catch (e){
+                console.log(e);
+            }
 
             //random result:
             var item = results[Math.floor(Math.random() * results.length)];
@@ -272,7 +270,7 @@ function outputResults(lat, lng) {
                 data = div.innerHTML;
 
                 //add new html to old html
-                div.insertAdjacentHTML('afterend', html);
+                div.insertAdjacentHTML('beforeend', html);
 
                 //the saved old html, append new html to be saved for later.
                 data += html;

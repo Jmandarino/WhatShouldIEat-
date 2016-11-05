@@ -47,10 +47,22 @@
 
     <!-- api key --->
     <!-- AIzaSyBEKoaGbXjZXTna0TdZFveBwx8zSc55UFM -->
-    <h1>Where should I eat? <span style="font-size: 18px;">beta v 1.0</span></h1>
+    <div class="text-center">
+    <h1>Where should I eat? <span style="font-size: 18px;">beta v 1.1</span></h1>
     <p class="lead">Find local places to eat by either turning on your Location Services or by entering your ZIP
         code. </p>
-    <p></p>
+    </div>
+    <h3>How to Use This App</h3>
+    <ol>
+        <li>If your <b>location services</b> aren't on please enter your zip code</li>
+        <li>Clicking "submit" will give you all the results in your area</li>
+        <li>Clicking on options allows you to add filters to your search</li>
+        <li>After searching we randomly choose one restaurants for you to eat out</li>
+        <li>research to refresh your results!</li>
+    </ol>
+    <p>
+
+    </p>
 
     <div id="warn"><h4>Location Services are on!</h4></div>
     <div id="location"></div>
@@ -60,7 +72,7 @@
             <br>
             <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
             <button onclick="zipToLocation()">Submit</button>
-            <button data-container="body" data-toggle="popover" data-placement="bottom"
+            <button data-container="body" data-toggle="popover" data-placement="top"
                     data-content="Click to expand and view search options" data-trigger="hover"
                     onclick="addSearchOptions()">options
             </button>

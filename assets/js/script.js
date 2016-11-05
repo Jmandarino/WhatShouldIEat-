@@ -3,16 +3,39 @@ var lat = '';
 var lng = '';
 
 
+//used to make stars
+$.fn.stars = function() {
+    return $(this).each(function() {
+
+        if($(this).hasClass("edited")){
+
+        }else{
+            $(this).html($('<span />').width(Math.max(0, (Math.min(5, parseFloat($(this).html())))) * 16));
+            $(this).addClass("edited");
+        }
+
+    });
+};
+
+
+
+
+
 //geocoder that makes use of lattitude and longitutde from navigator.geolocaiton
 var geocoder = new google.maps.Geocoder();
 window.onload = getLocation;
 
 //price filter
+//JQuery thread
 $(document).ready(function () {
     $('#price-filter').multiselect();
     $('[data-toggle="popover"]').popover();
+    makeStars();
 });
 
+function makeStars(){
+    $('span.stars').stars();
+}
 
 //div "serachOptions"
 function addSearchOptions() {
@@ -201,7 +224,7 @@ function outputResults(lat, lng) {
 
                 winner += item.name + '<br />';
                 winner += item.vicinity + '<br />';
-                winner += item.rating + '<br />';
+                winner += '<span class="stars">'+item.rating+'</span>' + '<br />';
                 winner += '</p><hr>';
 
                 //reset the winner's html
@@ -240,7 +263,7 @@ function outputResults(lat, lng) {
                 html += results[i].vicinity + '<br />';
 
                 if (results[i].hasOwnProperty("rating")) {
-                    html += results[i].rating + '<br />';
+                    html += '<span class="stars">'+results[i].rating +'</span>' + '<br />';
                 } else {
                     html += 'Not rated' + '<br />';
                 }
@@ -255,6 +278,9 @@ function outputResults(lat, lng) {
                 }
             }
             html += '</div>';
+
+            //make stars
+            makeStars();
 
             if (pagination.hasNextPage) {
                 html += '<div class="row"><div class="text-center col-md-12 col-lg-12 col-sm-12"><button id="load-button" type="button" class="btn btn-primary load-button" >Load More</button></div></div>';
@@ -274,6 +300,9 @@ function outputResults(lat, lng) {
 
                 //the saved old html, append new html to be saved for later.
                 data += html;
+                makeStars();
+
+
             } else {
                 document.getElementById("results").innerHTML = html;
                 append = true;
@@ -293,6 +322,8 @@ function outputResults(lat, lng) {
                 var button = document.getElementById("load-button");
                 button.disabled = false;
 
+                makeStars();
+
                 button.addEventListener('click', function () {
 
                     //on click we will go to the next page of the API results
@@ -306,6 +337,7 @@ function outputResults(lat, lng) {
 
             } else {
                 //hide the home button
+                makeStars();
                 try {
                     document.getElementById("load-button").style.visibility = "hidden";
                 } catch (e) {

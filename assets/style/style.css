@@ -70,3 +70,25 @@ footer  p.author {
     color:;
     font-size: 16px;
 }
+
+ol, li {
+    list-style-position:inside;
+    margin-bottom: 10px;
+}
+
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Aligner-item {
+    max-width: 50%;
+}
+

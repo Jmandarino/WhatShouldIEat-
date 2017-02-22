@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="title" content="What Should I eat today?">
-    <meta name="description" content="">
+    <meta name="description" content="Let us choose a place for you to eat at!">
     <meta name="author" content="">
     <!-- facebook stuff -->
     <!-- TODO: fill this out -->
@@ -34,6 +34,7 @@
             crossorigin="anonymous"></script>
 
     <!-- link to custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/style/loader.css">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <link rel="stylesheet" type="text/css" href="assets/style/bootstrap-slider.min.css">
     <script src="assets/js/bootstrap-slider.min.js"></script>
@@ -72,23 +73,25 @@
         <h1>Where should I eat? <span style="font-size: 18px;">beta v 1.1</span></h1>
         <p class="lead">When you can't decide on a place to eat let us choose one for you!</p>
     </div>
+    <section align="center">
     <h3>How to Use This App</h3>
-    <ol>
-        <li>If your <b>location services</b> aren't on please enter your zip code</li>
+    <div class="text-center">
+        <ol>
+        <li>If your <b>location services aren't on</b> please enter your zip code</li>
         <li>Clicking "submit" will give you all the results in your area</li>
         <li>Clicking on options allows you to add filters to your search</li>
         <li>After searching we randomly choose one restaurants for you to eat out</li>
         <li>research to refresh your results!</li>
-    </ol>
-    <p>
+        </ol>
+    </div>
 
-    </p>
 
-    <div id="warn"><h4>Location Services are on!</h4></div>
+
+    <div id="warn" class="green"><h4>Location Services are on!</h4></div>
     <div id="location"></div>
 
-    <div class="row">
-        <div id="findloc" class="col-md-6 col-lg-12 col-sm-12 col-xs-12">
+    <div class="row justify-content-center">
+        <div id="findloc" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <br>
             <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
             <button onclick="zipToLocation()">Submit</button>
@@ -100,7 +103,8 @@
 
         </div>
     </div>
-    <div class="row">
+    </section>
+    <div id="searchOptionContainer" class="row">
         <div id="searchOptions" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6">
                 <span class="label">Select Price range:</span>
@@ -131,6 +135,13 @@
         </div>
     </div>
 
+
+    <div id="loader" class="Aligner">
+        <div class="Aligner-item">
+            <div class="mnml-spinner dark mx-auto"></div>
+        </div>
+
+    </div>
 
     <div id="winner"></div>
     <div id="results"></div>

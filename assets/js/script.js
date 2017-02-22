@@ -39,7 +39,7 @@ $(document).ready(function () {
      */
     $(window).scroll(function(){
         var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
-        var div_top = $('#nav-anchor').offset().top;
+        var div_top = $('#nav-anchor').offset();
         if (window_top > div_top) {
             $('nav').addClass('stick');
         } else {
@@ -98,6 +98,15 @@ $(document).ready(function () {
     });
 });
 
+function removeloader(){
+    var item =  document.getElementById("loader");
+    if (item.style.display == "none"){
+        return;
+    }else{
+        item.style.display = "none"
+    }
+}
+
 function makeStars(){
     $('span.stars').stars();
 }
@@ -105,6 +114,7 @@ function makeStars(){
 //div "serachOptions"
 function addSearchOptions() {
     document.getElementById("searchOptions").style.visibility = "visible";
+
 }
 
 
@@ -115,7 +125,8 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
         //if user blocks location services.
-        document.getElementById("warn").innerHTML = "<p> Location Services not turned on!</p> <p>Please search for zipcode</p>"
+        document.getElementById("warn").innerHTML = "<p> Location Services not turned on!</p> <p>Please search for zipcode</p>";
+        document.getElementById("warn").className = "red";
 
     }
 }
@@ -292,6 +303,8 @@ function outputResults(lat, lng) {
                 winner += '<span class="stars">'+item.rating+'</span>' + '<br />';
                 winner += '</p><hr>';
 
+                //remove loader
+                removeloader()
                 //reset the winner's html
                 document.getElementById('winner').innerHTML = winner;
 

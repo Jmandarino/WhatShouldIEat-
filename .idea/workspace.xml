@@ -4,6 +4,7 @@
     <list default="true" id="8248c661-b725-42c4-b5f8-03763757b779" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/style/style.css" afterPath="$PROJECT_DIR$/assets/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="wsie.iws" />
@@ -27,14 +28,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="129" column="89" lean-forward="false" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
+            <state relative-caret-position="204">
+              <caret line="128" column="43" lean-forward="false" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stickydiv.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/stickydiv.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,18 +73,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+            <state relative-caret-position="299">
+              <caret line="94" column="6" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -106,7 +117,10 @@
     <findStrings>
       <find>addSearch</find>
       <find>filter</find>
+      <find>#</find>
+      <find>theID</find>
       <find>options</find>
+      <find>scroll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,9 +143,9 @@
         <option value="$PROJECT_DIR$/assets/script.js" />
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/12/places_impl.js" />
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/12/controls.js" />
-        <option value="$PROJECT_DIR$/assets/style/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/style/style.css" />
       </list>
     </option>
   </component>
@@ -144,7 +158,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="1" />
-    <option name="width" value="1568" />
+    <option name="width" value="1487" />
     <option name="height" value="913" />
   </component>
   <component name="ProjectView">
@@ -191,24 +205,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WhatShouldIEat-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WhatShouldIEat-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,7 +350,7 @@
       <workItem from="1475536903131" duration="4832000" />
       <workItem from="1477247826539" duration="62000" />
       <workItem from="1478356976912" duration="8126000" />
-      <workItem from="1488203678201" duration="4986000" />
+      <workItem from="1488203678201" duration="6473000" />
     </task>
     <task id="LOCAL-00001" summary="added functionality to the price range, and keyword elements">
       <created>1475455534792</created>
@@ -405,11 +401,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488205877830</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added &quot;open now&quot; search feature">
+      <created>1488208681919</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1488208681919</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63130000" />
+    <option name="totallyTimeSpent" value="64617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,10 +424,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="1" width="1568" height="913" extended-state="0" />
-    <editor active="true" />
+    <frame x="10" y="1" width="1487" height="913" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2576923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.168357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4248366" sideWeight="0.29404762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -483,14 +486,15 @@
     <MESSAGE value="Fixed the load more issue" />
     <MESSAGE value="Added system for checking for stars" />
     <MESSAGE value="fixed &quot;price level adjustments&quot;, added classes to result items for later styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed &quot;price level adjustments&quot;, added classes to result items for later styling" />
+    <MESSAGE value="added &quot;open now&quot; search feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &quot;open now&quot; search feature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/assets/js/script.js</url>
-          <line>231</line>
+          <line>166</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
@@ -500,11 +504,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="https://maps.googleapis.com/maps-api-v3/api/js/26/12/places_impl.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="https://maps.googleapis.com/maps-api-v3/api/js/26/12/controls.js">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
@@ -782,29 +781,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/stickydiv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+        <state relative-caret-position="299">
+          <caret line="94" column="6" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="129" column="89" lean-forward="false" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
+        <state relative-caret-position="204">
+          <caret line="128" column="43" lean-forward="false" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

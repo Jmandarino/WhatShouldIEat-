@@ -67,7 +67,7 @@ footer h4 {
 }
 
 footer  p.author {
-    color:;
+    color:#373A3C;
     font-size: 16px;
 }
 
@@ -92,8 +92,6 @@ ol, li {
     max-width: 50%;
 }
 
-body{
-    font: Arial;
+body {
 
 }
-

@@ -224,14 +224,17 @@ function outputResults(lat, lng) {
             //if we are appending we arne't selecting a new winner.
             if (!append) {
                 var winner = '';
-                winner += '<h2>Winner!!</h2>';
+                winner += '<h2 align="center">You Should Eat At:</h2>';
+                winner += '<div class="Aligner winner"><div class="Aligner-item">';
 
-                winner += '<p>';
+                winner += '';
 
                 if ("photos" in item) {
+                    console.log(item);
+                    console.log(item.website);
                     winner += '<img class="img-fluid" src="' + item.photos[0].getUrl({
-                            'maxWidth': 100,
-                            'maxHeight': 100
+                            'maxWidth': 200,
+                            'maxHeight': 200
                         }) + '">'
                 } else {
                     winner += '<img class="img-fluid" src="assets/images/no_image.gif">';
@@ -240,7 +243,9 @@ function outputResults(lat, lng) {
                 winner += item.name + '<br />';
                 winner += item.vicinity + '<br />';
                 winner += '<span class="stars">'+item.rating+'</span>' + '<br />';
-                winner += '</p><hr>';
+                winner += '</div></div>';
+
+
 
                 //remove loader
                 removeloader()

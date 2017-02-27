@@ -92,6 +92,8 @@ ol, li {
     max-width: 50%;
 }
 
-body {
+.winner {
+    font-size: 20px;
+
 
 }

@@ -99,12 +99,14 @@
             </button>
 
 
+
         </div>
     </div>
     </section>
     <div id="searchOptionContainer" class="row">
         <div id="searchOptions" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6">
+            <!-- Price filter-->
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                 <span class="label">Select Price range:</span>
                 <select id="price-filter" multiple="multiple">
                     <option value="1">$</option>
@@ -114,14 +116,24 @@
                 </select>
             </div>
 
-
-            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6">
+            <!-- keyword serach -->
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                 <span class="label">Enter a keyword</span>
                 <input id="keywordsearchfield" type="text" placeholder="Keyword" data-container="body"
                        data-toggle="popover"
                        data-placement="bottom" data-content="Enter only one keyword" data-trigger="click">
             </div>
-            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center">
+
+            <!-- open now toggle -->
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
+                <span class="label">Search currently open only</span>
+                <button id="opennow" type="button" class="btn btn-secondary" autocomplete="off" aria-pressed="false"
+                       data-toggle="button" >
+                    Open Now
+                </button>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 text-center">
                 <br>
 
                 <button data-container="body" data-toggle="popover" data-placement="bottom"
@@ -130,6 +142,7 @@
                 </button>
 
             </div>
+
         </div>
     </div>
 

@@ -4,7 +4,6 @@
     <list default="true" id="8248c661-b725-42c4-b5f8-03763757b779" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/style/style.css" afterPath="$PROJECT_DIR$/assets/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="wsie.iws" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="94" column="30" lean-forward="true" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+            <state relative-caret-position="137">
+              <caret line="129" column="89" lean-forward="false" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -73,8 +72,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="196" column="20" lean-forward="true" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+            <state relative-caret-position="198">
+              <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,8 +105,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>addSearch</find>
-      <find>options</find>
       <find>filter</find>
+      <find>options</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,8 +129,8 @@
         <option value="$PROJECT_DIR$/assets/script.js" />
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/12/places_impl.js" />
         <option value="maps.googleapis.com/maps-api-v3/api/js/26/12/controls.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/style/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
@@ -143,9 +142,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="164" />
-    <option name="y" value="10" />
-    <option name="width" value="1330" />
+    <option name="x" value="10" />
+    <option name="y" value="1" />
+    <option name="width" value="1568" />
     <option name="height" value="913" />
   </component>
   <component name="ProjectView">
@@ -355,7 +354,7 @@
       <workItem from="1475536903131" duration="4832000" />
       <workItem from="1477247826539" duration="62000" />
       <workItem from="1478356976912" duration="8126000" />
-      <workItem from="1488203678201" duration="2149000" />
+      <workItem from="1488203678201" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="added functionality to the price range, and keyword elements">
       <created>1475455534792</created>
@@ -399,11 +398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478361734130</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed &quot;price level adjustments&quot;, added classes to result items for later styling">
+      <created>1488205877830</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1488205877830</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60293000" />
+    <option name="totallyTimeSpent" value="63130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,10 +421,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="164" y="10" width="1330" height="913" extended-state="0" />
-    <editor active="false" />
+    <frame x="10" y="1" width="1568" height="913" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30408472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2576923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4248366" sideWeight="0.29404762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -426,7 +432,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43783784" sideWeight="0.7059524" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4369645" sideWeight="0.7059524" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -476,11 +482,20 @@
     <MESSAGE value="Fixed how the apply button works." />
     <MESSAGE value="Fixed the load more issue" />
     <MESSAGE value="Added system for checking for stars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added system for checking for stars" />
+    <MESSAGE value="fixed &quot;price level adjustments&quot;, added classes to result items for later styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed &quot;price level adjustments&quot;, added classes to result items for later styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/script.js</url>
+          <line>231</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -777,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="94" column="30" lean-forward="true" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+        <state relative-caret-position="137">
+          <caret line="129" column="89" lean-forward="false" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
           <folding>
             <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -787,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="196" column="20" lean-forward="true" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+        <state relative-caret-position="198">
+          <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
           <folding />
         </state>
       </provider>

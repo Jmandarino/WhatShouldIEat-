@@ -229,6 +229,8 @@ function create_request(location, radius, type) {
 
     }
 
+    request["openNow"] = $("#opennow").hasClass("active")
+
 
     return request;
 }

@@ -259,21 +259,21 @@ function outputResults(lat, lng) {
 
                 //themeing with divs
                 html += '<div class="restaurants">';
-                html += '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">';
-                html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">';
+                html += '<div class="col-lg-6 col-md-6 offset-md-0 col-sm-6 offset-sm-0 col-xs-6 offset-xs-3 item">';
+                html += '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">';
 
 
                 //some restaurant don't have photos
                 if (results[i].hasOwnProperty("photos")) {
                     html += '<img class="img-fluid" src="' + results[i].photos[0].getUrl({
-                            'maxWidth': 200,
+                            'maxWidth': 300,
                             'maxHeight': 200
                         }) + '">'
                 } else {
                     html += '<img class="img-fluid" src="assets/images/no_image.gif">'
                 }
                 html += '</div>';
-                html += '<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">';
+                html += '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">';
 
 
                 html += '<div class="title"><h4>' + results[i].name + '</h4></div>';

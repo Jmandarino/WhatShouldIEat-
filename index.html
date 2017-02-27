@@ -92,8 +92,8 @@
         <div id="findloc" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <br>
             <input id="zipcodebox" type="text" placeholder="Enter your zipcode">
-            <button onclick="zipToLocation()">Submit</button>
-            <button data-container="body" data-toggle="popover" data-placement="top"
+            <button type="button" class="btn btn-primary" onclick="zipToLocation()">Submit</button>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
                     data-content="Click to expand and view search options" data-trigger="hover"
                     onclick="addSearchOptions()">Filter
             </button>
@@ -103,10 +103,11 @@
         </div>
     </div>
     </section>
+
     <div id="searchOptionContainer" class="row">
-        <div id="searchOptions" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div id="searchOptions" >
             <!-- Price filter-->
-            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
                 <span class="label">Select Price range:</span>
                 <select id="price-filter" multiple="multiple">
                     <option value="1">$</option>
@@ -117,23 +118,23 @@
             </div>
 
             <!-- keyword serach -->
-            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
                 <span class="label">Enter a keyword</span>
                 <input id="keywordsearchfield" type="text" placeholder="Keyword" data-container="body"
                        data-toggle="popover"
                        data-placement="bottom" data-content="Enter only one keyword" data-trigger="click">
             </div>
 
-            <!-- open now toggle -->
-            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                <span class="label">Search open only</span>
-                <button id="opennow" type="button" class="btn btn-secondary" autocomplete="off" aria-pressed="false"
-                       data-toggle="button" >
-                    Open Now
-                </button>
-            </div>
 
-            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 text-center">
+            <!-- open now toggle -->
+            <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 text-center">
+            <span class="label">Search open only</span>
+            <button id="opennow" type="button" class="btn btn-secondary" autocomplete="off" aria-pressed="false"
+                    data-toggle="button" >
+                Open Now
+            </button>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 text-center">
                 <br>
 
                 <button data-container="body" data-toggle="popover" data-placement="bottom"
@@ -141,11 +142,11 @@
                     Apply
                 </button>
 
+
             </div>
 
         </div>
     </div>
-
 
     <div id="loader" class="Aligner">
         <div class="Aligner-item">
@@ -154,7 +155,7 @@
 
     </div>
 
-    <div id="winner"></div>
+    <div id="winner" class="row"></div>
     <div id="results"></div>
     <div id="results2"></div>
 

@@ -198,16 +198,16 @@ function create_request(location, radius, type) {
         minprice = selectedValues[0];
         maxprice = selectedValues[0];
 
-        request['minprice'] = minprice;
-        request['maxprice'] = maxprice;
+        request["minPriceLevel"] = minprice;
+        request["maxPriceLevel"] = maxprice;
 
 
     } else if (selectedValues.length > 1) {
         minprice = selectedValues[0];
         maxprice = selectedValues[selectedValues.length - 1];
 
-        request['minprice'] = minprice;
-        request['maxprice'] = maxprice;
+        request["minPriceLevel"] = minprice;
+        request["maxPriceLevel"] = maxprice;
     }
 
     //case insensitive of the first letters
@@ -318,6 +318,8 @@ function outputResults(lat, lng) {
                     html += '<div class="row">'
                 }
 
+                //themeing with divs
+                html += '<div class="restaurants">';
                 html += '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">';
                 html += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">';
 
@@ -335,9 +337,9 @@ function outputResults(lat, lng) {
                 html += '<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">';
 
 
-                html += '<h4>' + results[i].name + '</h4>';
+                html += '<div class="title"><h4>' + results[i].name + '</h4></div>';
 
-                html += '<p>';
+                html += '<p class="description">';
                 html += results[i].vicinity + '<br />';
 
                 if (results[i].hasOwnProperty("rating")) {
@@ -350,6 +352,7 @@ function outputResults(lat, lng) {
                 html += '</p>';
                 html += '</div>';
                 html += '</div>';
+                html += '</div>';//close restaurants class
 
                 if (i % 2 != 0) {
                     html += '</div>'
